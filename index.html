@@ -77,7 +77,7 @@
         <label for="guest-name">Como devemos chamar você?</label>
         <input id="guest-name" name="guestName" autocomplete="name" maxlength="60" required placeholder="Seu nome" />
         <label for="order-notes">Observação <span>(opcional)</span></label>
-        <textarea id="order-notes" name="notes" maxlength="240" rows="2" placeholder="Ex.: com canela, pouco açúcar..."></textarea>
+        <textarea id="order-notes" name="notes" maxlength="240" rows="2" placeholder="Ex.: com canela, vou querer açúcar..."></textarea>
         <p class="sugar-note">Nossos cafés são sem açúcar.</p>
         <p class="form-error" id="form-error" role="alert" hidden></p>
         <button class="primary-button" id="submit-order" type="submit"><span>Confirmar pedido</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M14 7l5 5-5 5"/></svg></button>
@@ -87,10 +87,11 @@
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
     <template id="drink-template"><article class="drink-card"><div class="drink-top"><span class="volume"></span><div class="drink-actions"><button class="ingredients-button" type="button">Ingredientes</button><button class="order-drink" type="button">Pedir</button></div></div><h3></h3><p class="drink-description"></p></article></template>
     <template id="order-template"><article class="order-item"><button class="complete-toggle" type="button" aria-label="Marcar como entregue"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.2 4.2L19 6.5"/></svg></button><div class="order-copy"><p class="order-person"></p><div class="order-title-row"><h3 class="order-drink-name"></h3><div class="order-actions"><button class="pill-action edit-order" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5 4 4M4 20l4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20Z"/></svg><span>Editar</span></button><button class="pill-action delete-order" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6m4-6v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg><span>Apagar</span></button></div></div><p class="order-recipe"></p></div></article></template>
-    <dialog id="ingredients-dialog" class="ingredients-dialog" aria-labelledby="ingredients-title"><div><button class="dialog-close" id="ingredients-close" type="button" aria-label="Fechar">×</button><p class="dialog-overline">O QUE VAI NA XÍCARA</p><h2 id="ingredients-title"></h2><p id="ingredients-content"></p></div></dialog>
+    <dialog id="ingredients-dialog" class="ingredients-dialog" aria-labelledby="ingredients-title"><div><button class="dialog-close" id="ingredients-close" type="button" aria-label="Fechar">×</button><p class="dialog-overline">O QUE VAI NA XÍCARA</p><h2 id="ingredients-title"></h2><p id="ingredients-content"></p><button class="primary-button ingredients-order-button" id="ingredients-order" type="button"><span>Pedir</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M14 7l5 5-5 5"/></svg></button></div></dialog>
     <dialog id="guide-dialog" class="guide-dialog" aria-label="Entenda o volume de cada café"><button class="guide-close" id="guide-close" type="button" aria-label="Fechar">×</button><img src="./Entenda.png" alt="Guia visual do volume de cada café, com as bebidas, capacidades e descrições." /></dialog>
 
     <script src="./firebase-config.js"></script>
     <script type="module" src="./app.js"></script>
   </body>
 </html>
+
