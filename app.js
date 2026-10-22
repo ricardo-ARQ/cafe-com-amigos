@@ -8,7 +8,7 @@ const DRINKS = [
   ['mocca','Mocca','160 ml','Doce, intenso e bem aconchegante.','Café · Leite · Ganache'],
   ['latte-curto','Latte curto','300 ml','Mais leite, com um toque de café.','Café · Bastante Leite'],
   ['chocolate-quente','Achocolatado quente','180 ml','Leite espumado para esquentar a noite.','Nescau · Leite Quente Espumado'],
-  ['cafe-de-capsula','Café de capsula','40 ml','Aqui, você quem manda','Consulte capsulas disponíveis'],
+  ['cafe-de-capsula','Café de cápsula','40 ml','Aqui, você quem manda','Consulte cápsulas disponíveis'],
 ].map(([slug,name,volume,description,ingredients]) => ({slug,name,volume,description,ingredients}));
 const $ = (s) => document.querySelector(s);
 const el = { badge:$('#sync-badge'), retry:$('#sync-retry'), menu:$('#drink-grid'), list:$('#order-list'), count:$('#order-count'), progress:$('#progress-label'), dialog:$('#order-dialog'), form:$('#order-form'), select:$('#drink-select'), name:$('#guest-name'), notes:$('#order-notes'), error:$('#form-error'), submit:$('#submit-order'), toast:$('#toast'), ingredientsDialog:$('#ingredients-dialog'), ingredientsTitle:$('#ingredients-title'), ingredientsContent:$('#ingredients-content') };
