@@ -73,4 +73,5 @@
 @media(max-width:480px){.guide-trigger img{width:40px;height:40px}.guide-trigger{font-size:10px;padding:2px 5px}}
 .complete-toggle,.guide-close{border-width:2px}
 .ingredients-button,.order-drink{border-color:#a99280}
+@media(max-width:480px){.drink-description{display:block}}
 
